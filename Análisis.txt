@@ -1,0 +1,5 @@
+Cotejar el analizador creado manualmente con el generado mediante YACC/FLEX.
+
+Al utilizar el comando bison -v grammar.y se genera un analizador de la gramática muy similar al hecho manualmente (archivos adjuntos). 
+La diferencia que se puede evidenciar es la cantidad de estados que estos poseen, el manual posee 15 estados en total y el hecho automáticamente tiene 19. 
+Esto puede ser por diferentes razones, principalmente porque en la gramática aplicada en Yacc, se toman en cuenta símbolos como \n (newline) o el espacio vacío. 
